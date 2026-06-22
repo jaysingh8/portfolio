@@ -8,14 +8,14 @@ const projects = [
       "MERN social media platform with authentication, real-time chat, likes, comments, and follow system using Socket.io.",
     tech: ["React.js", "MongoDB", "Socket.io", "Node.js","Express.js"],
     github: "https://github.com/jaysingh8/social-media-app",
-  },
+    liveLink:"https://social-media-frontend-gules-five.vercel.app/"
+  },{
+    title:"Clothy",
+    description:"Clothy is a modern fashion e-commerce platform that allows users to browse, search, and purchase trendy clothing and accessories online. It offers a seamless shopping experience with features like user authentication, product filtering, cart management, wishlist, and secure checkout, all within a responsive and user-friendly interface.",
+    tech:["React.js","TailwindCss","MongoDB","Node.js","Express.js","Google oauth","Express-validator","Passport.js"],
+    github: "https://github.com/jaysingh8/Clothy-frontend",
+    liveLink:"https://clothy-frontend-mu.vercel.app/"
 
-  {
-    title: "BookSet",
-    description:
-      "Responsive book management platform with clean UI, backend integration, and CRUD functionality.",
-    tech: ["React.js", "Node.js", "MongoDB","Express.js"],
-    github: "https://github.com/jaysingh8/BookSet",
   },
 
   {
@@ -34,13 +34,7 @@ const projects = [
     github: "https://github.com/jaysingh8/rajasthan-royals-",
   },
 
-  {
-    title: "MediClient E-Pharmacy",
-    description:
-      "Full-stack MERN e-pharmacy application with medicine management, authentication, and responsive dashboard.",
-    tech: ["MongoDB","Node.js", "Express", "React.Js"],
-    github: "https://github.com/jaysingh8/mdi-client",
-  },
+ 
 
   
 ]
@@ -125,6 +119,18 @@ const Projects = () => {
                   <FaGithub size={20} />
                 </a>
 
+               <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="
+                    text-gray-500
+                    hover:text-white
+                    transition
+                  "
+                >
+                 Live Link
+                </a>
               </div>
 
             
